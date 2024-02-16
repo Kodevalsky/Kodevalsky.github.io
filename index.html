@@ -20,22 +20,22 @@
 
     <!-- Sticky Navbar -->
     <nav class="sticky top-0 w-full z-10 bg-charcoal h-16 md:h-32 shadow-xl flex items-center align-middle space-x-2 md:space-x-40 rounded-bl-lg rounded-br-lg justify-between px-4 md:px-10">
-        <p class="font-medium text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle text-left">Jeremi Kowalski</p>
+        <p class="font-medium text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle text-left">Jeremi Kowalski</p>
         <div class="space-x-2 md:space-x-4 font-extrabold align-middle">
-            <a href="#skills" id="nav-skills" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Skills</a>
-            <a href="#education" id="nav-edu" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Experience</a>
-            <a href="#about" id="nav-about" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">About</a>
-            <a href="#contact" id="nav-cont" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Contact</a>
-            <button id="langButton" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle" onclick="changeLang()">PL</button>
+            <a href="#skills" id="nav-skills" class="text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle">Skills</a>
+            <a href="#education" id="nav-edu" class="text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle">Experience</a>
+            <a href="#about" id="nav-about" class="text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle">About</a>
+            <a href="#contact" id="nav-cont" class="text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle">Contact</a>
+            <button id="langButton" class="text-xs sm:text-lg lg:text-2xl xl:text-4xl align-middle" onclick="changeLang()">PL</button>
         </div>
     </nav>
 
     <!-- Main Section -->
     <div class="flex flex-col lg:flex-row justify-center items-center min-h-screen pb-8 md:pb-16">
         <div class="justify-center flex-1 px-4 mt-8 lg:mt-0">
-            <img src="static/my_face.jpg" class="rounded-3xl hover:drop-shadow-2xl max-w-xs md:max-w-md lg:max-w-lg max-h-[calc(100vh-16rem)] object-contain mx-auto">
+            <img src="static/my_face.jpg" class="rounded-3xl hover:drop-shadow-2xl max-w-sm md:max-w-md lg:max-w-lg max-h-[calc(100vh-16rem)] object-contain mx-auto">
         </div>
-        <div class="flex-1 text-center lg:text-left px-4 pt-6">
+        <div class="flex-1 text-center lg:text-left px-4 pt-1 md:pt-6">
             <p class="text-6xl md:text-9xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,#A27B5C,#DCD7C9,#A27B5C)] bg-[length:200%_auto] animate-gradient leading-none md:leading-snug pb-1 md:pb-3">Kodevalsky</p>
             <p id="main-work" class="text-2xl md:text-4xl font-semibold pb-1 lg::pb-3">Open to Work!</p>
             <p id="main-int-1" class="text-sm md:text-lg mt-5 w-full lg:w-3/5">Hi and welcome!
@@ -50,7 +50,7 @@
     <!-- Skills Section -->
     <div id="skills" class="bg-cadet-blue py-12 md:py-48">
         <h1 class="text-6xl md:text-8xl font-extrabold text-dark-slate-gray text-center mb-12 md:mb-32">Skills</h1>
-        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-24 px-4">
+        <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-24 px-4">
 
             <div class="flex items-center justify-center md:justify-start h-24 md:h-32">
                 <img src="static/path7.png" alt="Python" class="hover:drop-shadow-2xl h-16 md:h-24">
@@ -182,7 +182,7 @@
     <!-- About Me Section -->
     <div id="about" class="bg-cadet-blue py-12 md:py-56">
         <h1 id="about-main"class="text-6xl md:text-8xl font-extrabold text-dark-slate-gray text-center mb-32">About Me</h1>
-        <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-24 px-16"> 
+        <div class="mx-auto grid grid-cols-1 xl:grid-cols-3 gap-24 px-16"> 
             <div class="group relative block bg-black rounded-3xl hover:drop-shadow-2xl h-full md:h-full">
                 <img alt="" src="static/warsaw.jpg" class="rounded-3xl absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
                 <div class="relative p-4 sm:p-6 lg:p-8">
