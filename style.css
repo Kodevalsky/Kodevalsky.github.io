@@ -560,6 +560,10 @@ video {
   inset: 0px;
 }
 
+.right-1 {
+  right: 0.25rem;
+}
+
 .top-0 {
   top: 0px;
 }
@@ -587,6 +591,10 @@ video {
 
 .mb-5 {
   margin-bottom: 1.25rem;
+}
+
+.ml-1 {
+  margin-left: 0.25rem;
 }
 
 .ml-5 {
@@ -633,6 +641,10 @@ video {
   height: 6rem;
 }
 
+.h-5 {
+  height: 1.25rem;
+}
+
 .h-full {
   height: 100%;
 }
@@ -651,6 +663,10 @@ video {
 
 .w-24 {
   width: 6rem;
+}
+
+.w-5 {
+  width: 1.25rem;
 }
 
 .w-full {
@@ -694,6 +710,10 @@ video {
 
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -756,9 +776,18 @@ video {
   border-top-right-radius: 0.75rem;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-cadet-blue {
   --tw-border-opacity: 1;
   border-color: rgb(162 123 92 / var(--tw-border-opacity));
+}
+
+.border-gray-300 {
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
 }
 
 .bg-black {
@@ -802,6 +831,10 @@ video {
 .object-cover {
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.p-2 {
+  padding: 0.5rem;
 }
 
 .p-4 {
@@ -936,6 +969,11 @@ video {
   color: rgb(44 54 57 / var(--tw-text-opacity));
 }
 
+.text-gray-700 {
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+
 .text-pale-silver {
   --tw-text-opacity: 1;
   color: rgb(220 215 201 / var(--tw-text-opacity));
@@ -976,9 +1014,24 @@ video {
   transition-duration: 150ms;
 }
 
+.hover\:bg-gray-100:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+}
+
 .hover\:drop-shadow-2xl:hover {
   --tw-drop-shadow: drop-shadow(0 25px 25px rgb(0 0 0 / 0.15));
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.focus\:bg-gray-200:focus {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+}
+
+.focus\:outline-none:focus {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
 }
 
 .group:hover .group-hover\:translate-y-0 {

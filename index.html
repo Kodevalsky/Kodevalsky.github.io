@@ -10,6 +10,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="description" content="Jeremi Kowalski's personal website">
 </head>
 
 <!-- Page Body -->
@@ -20,10 +22,11 @@
     <nav class="sticky top-0 w-full z-10 bg-charcoal h-16 md:h-32 shadow-xl flex items-center align-middle space-x-2 md:space-x-40 rounded-bl-lg rounded-br-lg justify-between px-4 md:px-10">
         <p class="font-medium text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle text-left">Jeremi Kowalski</p>
         <div class="space-x-2 md:space-x-4 font-extrabold align-middle">
-            <a href="#skills" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Skills</a>
-            <a href="#education" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Experience</a>
-            <a href="#about" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">About</a>
-            <a href="#contact" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Contact</a>
+            <a href="#skills" id="nav-skills" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Skills</a>
+            <a href="#education" id="nav-edu" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Experience</a>
+            <a href="#about" id="nav-about" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">About</a>
+            <a href="#contact" id="nav-cont" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle">Contact</a>
+            <button id="langButton" class="text-xs sm:text-lg md:text-2xl lg:text-4xl align-middle" onclick="changeLang()">PL</button>
         </div>
     </nav>
 
@@ -34,11 +37,11 @@
         </div>
         <div class="flex-1 text-center lg:text-left px-4 pt-6">
             <p class="text-6xl md:text-9xl font-extrabold bg-clip-text text-transparent bg-[linear-gradient(to_right,#A27B5C,#DCD7C9,#A27B5C)] bg-[length:200%_auto] animate-gradient leading-none md:leading-snug pb-1 md:pb-3">Kodevalsky</p>
-            <p class="text-2xl md:text-4xl font-semibold pb-1 lg::pb-3">Open to Work!</p>
-            <p class="text-sm md:text-lg mt-5 w-full lg:w-3/5">Hi and welcome!
-                My name is Jeremi and I am a 3rd year student at Wroclaw University of Science and Technology. I am currently looking for employment opportunities in the field of backend development and cybersecurity.
+            <p id="main-work" class="text-2xl md:text-4xl font-semibold pb-1 lg::pb-3">Open to Work!</p>
+            <p id="main-int-1" class="text-sm md:text-lg mt-5 w-full lg:w-3/5">Hi and welcome!
+                My name is Jeremi and I am a 3rd year Cybersecurity student at Wroclaw University of Science and Technology. I am currently looking for employment opportunities in the field of backend development and cybersecurity.
             </p>
-            <p class="text-sm md:text-lg mt-5 w-full lg:w-3/5">
+            <p id="main-int-2" class="text-sm md:text-lg mt-5 w-full lg:w-3/5">
                 I am hard-working and eager to learn new technologies. I am interested in AISec topics, applications of large AI models and their security risks. I am very passionate about projects which bring me closer to other people and allow me to help others - that's why I engage in extracurricular activities.
             </p>
         </div>
@@ -98,14 +101,14 @@
 
     <!-- Experience Section -->
     <div id="education" class="bg-dark-slate-gray py-12 md:py-48 flex flex-col items-center">
-        <h1 class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Education</h1>
+        <h1 id="exp-edu" class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Education</h1>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14 text-center">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">BSc in Cybersecurity</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2021 - 2024</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I am currently pursuing a Bachelor program in Cybersecurity at <b><a href="https://pwr.edu.pl/">WUST</a></b></p>
+            <h2 id="exp-edu-title-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">BSc in Cybersecurity</h2>
+            <h3 id="exp-edu-date-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2021 - 2024</h3>
+            <p id="exp-edu-desc-1" class="text-left text-xs md:text-2xl w-24 md:w-full">I am currently pursuing a Bachelor program in Cybersecurity at <b><a href="https://pwr.edu.pl/">WUST</a></b></p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
@@ -113,22 +116,22 @@
         
     <div id="experience" class="bg-dark-slate-gray flex flex-col items-center">
 
-        <h1 class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Experience</h1>
+        <h1 id="exp-exp" class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Experience</h1>
         
         <hr class="border-cadet-blue w-2/3">
         
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-                <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">Programming Teacher</h2>
-                <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2022 - 2023</h3>
-                <p class="text-left text-xs md:text-2xl w-24 md:w-full">For a year, I've worked a part-time job at <b><a href="https://algorithmicschool.com/">Algorithmics</a></b> - an international programming School. I taught Python, Game Design in Roblox and Scratch</p>
+                <h2 id="exp-exp-title-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">Programming Teacher</h2>
+                <h3 id="exp-exp-date-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2022 - 2023</h3>
+                <p id="exp-exp-desc-1" class="text-left text-xs md:text-2xl w-24 md:w-full">For a year, I've worked a part-time job at <b><a href="https://algorithmicschool.com/">Algorithmics</a></b> - an international programming School. I taught Python, Game Design in Roblox and Scratch</p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">Software Developer at Project Scorpio</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2022 - Now</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I am a member of the software department at WUST's Academic Rover Team - <b><a href="https://www.scorpio.pwr.edu.pl/">Project Scorpio</a></b>. I work in C++, Python, ROS.</p>
+            <h2 id="exp-exp-title-2" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">Software Developer at Project Scorpio</h2>
+            <h3 id="exp-exp-date-2" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2022 - Now</h3>
+            <p id="exp-exp-desc-2" class="text-left text-xs md:text-2xl w-24 md:w-full">I am a member of the software department at WUST's Academic Rover Team - <b><a href="https://www.scorpio.pwr.edu.pl/">Project Scorpio</a></b>. I work in C++, Python, ROS.</p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
@@ -137,38 +140,38 @@
 
     <div id="experience" class="bg-dark-slate-gray flex flex-col py-12 md:py-48 items-center">
 
-        <h1 class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Projects and volunteering</h1>
+        <h1 id="exp-vol" class="text-4xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Projects and volunteering</h1>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">ZHP Team Leader</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2020 - 2022</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I was a Team leader in a the <b><a href="https://zhp.pl/">Polish Scouting Association</a></b> for 2 years</p>
+            <h2 id="exp-vol-title-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">ZHP Team Leader</h2>
+            <h3 id="exp-vol-date-1" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">2020 - 2022</h3>
+            <p id="exp-vol-desc-1" class="text-left text-xs md:text-2xl w-24 md:w-full">I was a Team leader in a the <b><a href="https://zhp.pl/">Polish Scouting Association</a></b> for 2 years</p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">TeenCrunch programme member</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2023 - Now</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I am working on a startup idea in <b><a href="https://teencrunch.org/"></a>TeenCrunch</a></b> - youth enterprise acceleration programme</p>
+            <h2 id="exp-vol-title-2" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">TeenCrunch programme member</h2>
+            <h3 id="exp-vol-date-2" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2023 - Now</h3>
+            <p id="exp-vol-desc-2" class="text-left text-xs md:text-2xl w-24 md:w-full">I am working on a startup idea in <b><a href="https://teencrunch.org/"></a>TeenCrunch</a></b> - youth enterprise acceleration programme</p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">New Leadership Academy</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2022 - 2023</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I am a graduate of a modern leadership training programme created by <b><a href="https://www.szkola-liderow.pl/">the School of Leaders foundation</a></b></p>
+            <h2 id="exp-vol-title-3" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5">New Leadership Academy</h2>
+            <h3 id="exp-vol-date-3" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2022 - 2023</h3>
+            <p id="exp-vol-desc-3" class="text-left text-xs md:text-2xl w-24 md:w-full">I am a graduate of a modern leadership training programme created by <b><a href="https://www.szkola-liderow.pl/">the School of Leaders foundation</a></b></p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
 
         <div class="max-w-6xl grid grid-cols-3 gap-2 md:gap-28 items-center py-14">
-            <h2 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"><i>Behind the Scene </i>Gallery</h2>
-            <h3 class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2019 - 2021</h3>
-            <p class="text-left text-xs md:text-2xl w-24 md:w-full">I took part in an initiative overlooked by <b><a href="https://en.pafw.pl/">The Polish-American Freedom Foundation</a></b>, where we realized local community projects with my peers e.g. A Musical about the history of our city or a movie about young people looking to bring back the Internet</p>
+            <h2 id="exp-vol-title-4" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"><i>Behind the Scene </i>Gallery</h2>
+            <h3 id="exp-vol-date-4" class="text-center text-lg md:text-4xl font-semibold text-cadet-blue mb-5"> 2019 - 2021</h3>
+            <p id="exp-vol-desc-4" class="text-left text-xs md:text-2xl w-24 md:w-full">I took part in an initiative overlooked by <b><a href="https://en.pafw.pl/">The Polish-American Freedom Foundation</a></b>, where we realized local community projects with my peers e.g. A Musical about the history of our city or a movie about young people looking to bring back the Internet</p>
         </div>
 
         <hr class="border-cadet-blue w-2/3">
@@ -178,15 +181,15 @@
 
     <!-- About Me Section -->
     <div id="about" class="bg-cadet-blue py-12 md:py-56">
-        <h1 class="text-6xl md:text-8xl font-extrabold text-dark-slate-gray text-center mb-32">About Me</h1>
+        <h1 id="about-main"class="text-6xl md:text-8xl font-extrabold text-dark-slate-gray text-center mb-32">About Me</h1>
         <div class="mx-auto grid grid-cols-1 md:grid-cols-3 gap-24 px-16"> 
             <div class="group relative block bg-black rounded-3xl hover:drop-shadow-2xl h-full md:h-full">
                 <img alt="" src="static/warsaw.jpg" class="rounded-3xl absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
                 <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-xl font-bold text-white sm:text-2xl">Travels and Adventures</p>
+                <p id="about-photo-title-1" class="text-xl font-bold text-white sm:text-2xl">Travels and Adventures</p>
                 <div class="mt-12 sm:mt-48 lg:mt-64">
                     <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <p class="text-base md:text-2xl text-white mr-6">
+                    <p id="about-photo-desc-1" class="text-base md:text-2xl text-white mr-6">
                         I love to travel and explore new places - seeing and experiencing new cultures is a way for me to look at many things from a different perspective. I have been to many countries in Europe and I am planning to visit scandivian countries soon.
                     </p>
                     </div>
@@ -196,10 +199,10 @@
             <div class="group relative block bg-black rounded-3xl hover:drop-shadow-2xl h-full md:h-full">
                 <img alt="" src="static/scorpio.jpg" class="rounded-3xl absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
                 <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-xl font-bold text-white sm:text-2xl">Science and STEM</p>
+                <p id="about-photo-title-2" class="text-xl font-bold text-white sm:text-2xl">Science and STEM</p>
                 <div class="mt-12 sm:mt-48 lg:mt-64">
                     <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <p class="text-base md:text-2xl text-white mr-6">
+                    <p id="about-photo-desc-2" class="text-base md:text-2xl text-white mr-6">
                         Science projects and opportunities to learn are very important to me and self-improvement is one of my key values. The rover you see in the picture is Scorpio 7 - one of the rovers developed by our University Team. 
                     </p>
                     </div>
@@ -209,10 +212,10 @@
             <div class="group relative block bg-black rounded-3xl hover:drop-shadow-2xl h-full md:h-full">
                 <img alt="" src="static/planetarium.jpg" class="rounded-3xl absolute inset-0 h-full w-full object-cover opacity-75 transition-opacity group-hover:opacity-50"/>
                 <div class="relative p-4 sm:p-6 lg:p-8">
-                <p class="text-xl font-bold text-white sm:text-2xl">Education</p>
+                <p id="about-photo-title-3" class="text-xl font-bold text-white sm:text-2xl">Education</p>
                 <div class="mt-12 sm:mt-48 lg:mt-64">
                     <div class="translate-y-8 transform opacity-0 transition-all group-hover:translate-y-0 group-hover:opacity-100">
-                    <p class="text-base md:text-2xl text-white mr-6">
+                    <p id="about-photo-desc-3" class="text-base md:text-2xl text-white mr-6">
                         I always look for opportunities to teach others and show others my passions. I'm planning to start a student's club in hometown to teach STEM and programming to kids in my neighborhood.
                     </p>
                     </div>
@@ -224,7 +227,7 @@
 
     <!-- Contact Section -->
     <div id="contact" class="bg-dark-slate-gray py-36">
-        <h1 class="text-6xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Contact</h1>
+        <h1 id="contact-text" class="text-6xl md:text-8xl font-extrabold text-cadet-blue text-center mb-16">Contact</h1>
         <div class="max-w-6xl mx-auto gap-24 px-4">
             <div class="flex flex-col justify-center items-center">
                 <div class="flex justify-center space-x-8">
@@ -248,5 +251,83 @@
         <p class="font-semibold text-lg md:text-xl">Copyright 2024 Jeremi Kowalski</p>
     </footer>
 </body>
+<script>
+    const translations = {
+        "nav-skills":"Umiejętności",
+        "nav-edu":"Edukacja",
+        "nav-about":"O mnie",
+        "nav-cont":"Kontakt",
+        "main-work":"Otwarty na pracę!",
+        "main-int-1":"Cześć! Nazywam się Jeremi i jestem studentem 3 roku Cyberbezpieczeństwa na Politechnice Wrocławskiej. Obecnie szukam możliwości zatrudnienia w dziedzinie backend developmentu i cyberbezpieczeństwa.",
+        "main-int-2":"Jestem pracowity i chętny do nauki nowych technologii. Interesuję się tematyką AISec, zastosowaniami dużych modeli AI i ich ryzykami dla bezpieczeństwa. Bardzo pasjonuję się projektami, które zbliżają mnie do innych ludzi i pozwalają mi pomagać innym - dlatego angażuję się w inne działaności",
+        "exp-edu":"Edukacja",
+        "exp-edu-title-1":"Inżynier",
+        "exp-edu-date-1":"2021 - 2024",
+        "exp-edu-desc-1":"Obecnie studiuję na kierunku inżynierskim Cyberbezpieczeństwo na <b><a href='https://pwr.edu.pl/'>PWr</a></b>",
+        "exp-exp":"Doświadczenie",
+        "exp-exp-title-1":"Nauczyciel Programowania",
+        "exp-exp-date-1":"2022 - 2023",
+        "exp-exp-desc-1":"Przez rok pracowałem na umowie zlecenie w <b><a href='https://algorithmicschool.com/'>Algorithmics</a></b> - międzynarodowej szkole programowania. Nauczałem Pythona, projektowania gier w Roblox i Scratch",
+        "exp-exp-title-2":"Programista w Projekcie Scorpio",
+        "exp-exp-date-2":"2022 - Teraz",
+        "exp-exp-desc-2":"Jestem członkiem działu software w KN OFFROAD <b><a href='https://www.scorpio.pwr.edu.pl/'>Projekt Scorpio</a></b>. Pracuję w C++, Pythonie, ROS.",
+        "exp-vol":"Projekty i wolontariat",
+        "exp-vol-title-1":"Drużynowy ZHP",
+        "exp-vol-date-1":"2020 - 2022",
+        "exp-vol-desc-1":"Przez 2 lata byłem drużynowym w <b><a href='https://zhp.pl/'>ZHP</a></b>",
+        "exp-vol-title-2":"Uczestnik TeenCrunch",
+        "exp-vol-date-2":"2023 - Teraz",
+        "exp-vol-desc-2":"Pracuję nad startupem w <b><a href='https://teencrunch.org/'>TeenCrunch</a></b> - programie akceleracji młodych przedsiębiorców",
+        "exp-vol-title-3":"Akademia nowego przywództwa",
+        "exp-vol-date-3":"2022 - 2023",
+        "exp-vol-desc-3":"Jestem absolwentem programu szkoleniowego dla liderów stworzonego przez <b><a href='https://www.szkola-liderow.pl/'>Fundację Szkoła Liderów</a></b>",
+        "exp-vol-title-4":"Galeria <i>Za Sceną</i>",
+        "exp-vol-date-4":"2019 - 2021",
+        "exp-vol-desc-4":"Brałem udział w inicjatywie <b><a href='https://en.pafw.pl/'>Fundacji Polsko-Amerykańskiej Wolności</a></b>, gdzie realizowaliśmy projekty społeczne z moimi rówieśnikami, np. musical o historii naszego miasta czy film o młodych ludziach pragnących przywrócić Internet",
+        "about-main":"O mnie",
+        "about-photo-title-1":"Podróże i Przygody",
+        "about-photo-desc-1":"Uwielbiam podróżować i poznawać nowe miejsca - doświadczanie nowych kultur pozwala mi spojrzeć na wiele rzeczy z innej, nowej perspektywy. Byłem w wielu krajach Europy i planuję wkrótce odwiedzić kraje skandynawskie.",
+        "about-photo-title-2":"Nauka i STEM",
+        "about-photo-desc-2":"Projekty naukowe i możliwości nauki są dla mnie bardzo ważne, a samodoskonalenie jest jedną z moich kluczowych wartości. Widzisz na zdjęciu łazik Scorpio 7 - jednego z łazików stworzonych przez nasz zespół w Kole Naukowym.",
+        "about-photo-title-3":"Edukacja",
+        "about-photo-desc-3":"Zawsze szukam okazji, aby uczyć innych i zarażać innych moimi pasjami. Planuję założyć klub uczniowski w moim mieście, aby uczyć STEM i programowania młodych ludzi w mojej okolicy.",
+        "contact-text":"Kontakt"
+    }
+
+    let currentPageLang = "EN";
+
+    function changeLang() {
+        for (const id in translations) {
+            const element = document.getElementById(id);
+            if (element) {
+                let buffer = element.innerHTML;
+                element.innerHTML = translations[id];
+                translations[id] = buffer;
+            }
+        }
+        if (document.getElementById("langButton").innerText == "PL"){
+            document.getElementById("langButton").innerText = "EN";
+            currentPageLang = "PL";
+        }
+        else{
+            document.getElementById("langButton").innerText = "PL";
+            currentPageLang = "EN";
+        }
+        document.cookie = "language=" + currentPageLang + "; expires=Thu, 18 Dec 2024 12:00:00 UTC; path=/";
+    }
+
+    function setLang() {
+        let lang = document.cookie.split('; ').find(row => row.startsWith('language='));
+        if (lang) {
+            lang = lang.split('=')[1];
+            if (lang == "PL") {
+                changeLang();
+            }
+        }
+    }
+
+    window.onload = setLang;
+
+</script>
 </html>
 
