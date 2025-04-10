@@ -2,3 +2,9 @@
 tailwind.config.js
 tailwindcss-linux-x64
 input.css
+package.json
+node_modules/*
+pnpm-lock.yaml
+package-lock.json
+postcss.config.js
+src/*
